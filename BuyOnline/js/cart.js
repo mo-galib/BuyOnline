@@ -46,6 +46,7 @@ function removeItem(index) {
   cart.splice(index, 1); 
   localStorage.setItem('cart', JSON.stringify(cart)); 
   displayCart(); 
+  updateCartCount();
 }
 
 displayCart();
